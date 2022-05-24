@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto, Arcoltec. Calidad industrial, calidad humana</title>
+    <link rel="stylesheet" href="../css/style.css"><!--hoja css-->
+    <link rel="stylesheet" href="../css/restonsive.css"><!--hoja css responsive-->
+    <link rel="stylesheet" href="../css/normalizer.css"><!--normalizer-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,400;0,8..144,700;1,8..144,400&display=swap" rel="stylesheet">  
+    <!-- Titulos font-family: 'Roboto Serif', serif; //////// contenido font-family: 'Roboto Flex', sans-serif;-->
+    <script src="https://kit.fontawesome.com/b6ce468d03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="navegador">
+            <nav class="navegador__navegador">
+                    <div class="navegador__LogoPequenio">
+                        <a href="./index.html"><img src="../img/logoPequeño.png" alt="logo-pequeño" href="index.html"></a>
+                        <p>Calidad industrial<span> Calidad humana<span></p>
+                    </div>
+                    <input type="checkbox" id="check" name="bar">
+                    <label for="check" class="bar-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                <div class="menu_navegador">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="contacto.html" class="activado">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="bannerHeader">
+            <img class="bannerHeader__fondo" src="../img/bgHeader1.webp" alt="banner-principal">
+            <div class="bannerHeader__contenedorLogo">
+                    <div class="bannerHeader__logo--tituloOtros">
+                        <h1>Contact<span>o</span></h1>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <main><!-- inicio contenido principal-->
+        <div class="margenesContenido">
+            <h2 class="tituloContacto">Estaremos complacidos en atenderte.</h2>
+            <section class="infoContacto">
+                <div class="infoContacto__googleMaps">
+                    <h3>ARCOLTEC</h3>
+                    <p>Mi negocio google (google maps)<br> Atención a domicilio.</p>
+                </div>
+                <div class="infoContacto__lineas">
+                    <h3>Líneas de atención</h3>
+                    <p><a href="tel:+5491125882434">(+54) 9 1125882434</a></p>
+                    <p><a href="tel:+5491163646692">(+54) 9 1163646692</a></p>
+                </div>
+                <div class="infoContacto__correo">
+                    <h3>Correo</h3>
+                    <p>info@arcoltec.com</p>
+                </div>
+                <div class="infoContacto__youtube">
+                    <h3>Youtube</h3>
+                    <p><a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank>/ARCOLTEC</a></p>
+                </div>
+                <div class="infoContacto__facebook">
+                    <h3>Facebook</h3>
+                    <p><a href="https://www.facebook.com/Arcoltec" Target=_blank>/ARCOLTEC</a></p>
+                </div>
+                <div class="infoContacto__instagram">
+                    <h3>Instagram</h3>
+                    <p><a href="https://www.instagram.com/arcoltec/" Target=_blank>/ARCOLTEC</a></p>
+                </div>
+            </section><!-- fin contacto -->
+            <section class="formularioContacto"> <!--inicio formulario-->
+                <h2>Solicita nuestros servicios</h2>
+                <p>Por favor, introduce tus datos y te responderemos tan pronto nos sea posible.</p>
+                <form class="formularioContacto__formulario" action="enviar.php">
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required placeholder="Ingrese su email">
+                
+                    <label  for="pais">País:</label>
+                    <select name="pais" id="pais">
+                        <option value="arg">Argentina</option>
+                        <option value="col">Colombia</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                
+                        <label  for="adjunto">Ingrese foto o video de la máquina: </label>
+                        <input type="file" id="adjunto">
+                
+                    <label  for="interes">Estoy interesado en: </label>
+                    <span class="interes1"><input type="radio" name="interes" value="00">Consulta
+                    <input type="radio" name="interes" value="01"> Presupuesto</span>
+                
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Comentá, en que podemos ayudarte?"></textarea>
+                 
+                    <input class="formularioContacto__formulario--boton" type="submit" value="Hacé tu pedido">
+                </form>
+            </section><!-- fin formulario -->
+        </div>
+    </main><!-- fin contenido principal -->
+    <footer class="footer">
+        <div class="margenesContenido footer_grid">
+            <div>
+                <p>Arcoltec, ARGENTINA. Servicio técnico a domicilio para maquinas comerciales de lavado y secado. Atención a lavaderos , hoteles , laundries,<br> lavaderos autoservicio y particulares. <br>Servicio principal en Capital federal, atención a nivel nacional.</p>
+                <p>Encontrá <span><a href="./servicios.html">aquí</a></span> las marcas que trabajamos.</p>
+                <p>Probá los <span><a href="./productos.html">productos industria Argentina</a></span>, calidad, economía y ahorro , haz clic aqui para saber más.
+                </p>
+            </div>
+            <div class="footer__redes">
+                <button><a href="./contacto.html">Click aquí para contactarnos</a></button>
+                <div class="footer__redes--iconos">
+                <h3>Redes sociales</h3>
+                    <a href="https://www.facebook.com/Arcoltec" Target=_blank><img src="../img/icono-facebook.png" alt="icono-facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank><img src="../img/icono-youtube.png" alt="icono-youtube"></a>
+                    <a href="https://www.instagram.com/arcoltec/" Target=_blank><img src="../img/icono-instagram.png" alt="icono-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer><!-- fin footer 
+       <footer class="footer">
+                <div class="margenesContenido footer_grid">
+                    <div>
+                        <p>Arcoltec, ARGENTINA. Servicio técnico a domicilio para maquinas comerciales de lavado y secado. Atención a lavaderos , hoteles , laundries,<br> lavaderos autoservicio y particulares. <br>Servicio principal en Capital federal, atención a nivel nacional.</p>
+                        <p>Encontrá <span><a href="./servicios.html">aquí</a></span> las marcas que trabajamos.</p>
+                        <p>Probá los <span><a href="./productos.html">productos industria Argentina</a></span>, calidad, economía y ahorro , haz clic aqui para saber más.
+                        </p>
+                    </div>
+                    <div class="footer__redes">
+                        <button><a href="./contacto.html">Click aquí para contactarnos</a></button>
+                        <div class="footer__redes--iconos">
+                        <h3>Redes sociales</h3>
+                            <a href="https://www.facebook.com/Arcoltec" Target=_blank><img src="../img/icono-facebook.png" alt="icono-facebook"></a>
+                            <a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank><img src="../img/icono-youtube.png" alt="icono-youtube"></a>
+                            <a href="https://www.instagram.com/arcoltec/" Target=_blank><img src="../img/icono-instagram.png" alt="icono-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer> fin footer -->
+
+</body>
+</html>

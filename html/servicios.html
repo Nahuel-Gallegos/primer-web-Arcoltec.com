@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios, Arcoltec. Calidad industrial, calidad humana</title>
+    <link rel="stylesheet" href="../css/normalizer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,400;0,8..144,700;1,8..144,400&display=swap" rel="stylesheet">  
+    <!-- Titulos font-family: 'Roboto Serif', serif; //////// contenido font-family: 'Roboto Flex', sans-serif;-->
+</head>
+<body>
+    <header>
+        <div class="navegador">
+            <div class="navegador__LogoPequenio">
+                <a href="../index.html"><img src="../img/logoPequeño.png" alt="logo-pequeño" href="../index.html"></a>
+                <p>Calidad industrial<span> Calidad humana<span></p>
+            </div>
+            <nav class="navegador__navegador">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="servicios.html">Servicios</a></li>
+                            <li><a href="./productos.html">Productos</a></li>
+                            <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav><!-- fin navegacion -->
+        </div>
+        <div class="bannerHeader">
+                <img class="bannerHeader__fondo" src="../img/bgHeader1.webp" alt="banner-principal">
+                <div class="bannerHeader__logo--tituloOtros">
+                    <h1>Servicios</h1>
+                </div>
+        </div>
+    </header>
+    <div class="margenesContenido">
+        <main ><!-- inicio contenido principal -->
+            <section class="serviciosRealizados"><!-- inicio descipcion de servicios -->
+                <div class="serviciosRealizados__titulo">
+                    <h2>Servicio técnico integral para tu equipo de lavado y secado de ropa.</h2>
+                    <p>Conocé nuestra experiencia</p>
+                </div>
+                <div class="serviciosRealizados__contenido">
+                    <h3>Reparación</h3>
+                    <p>Todo tiene solución! Sabemos que es importante para ti tener en buen funcionamiento tus maquinas, estamos nosotros que luego de una revisión y diagnostico encontraremos la manera de darle vida nueva a tu maquina.</p>
+                    <img class="serviciosRealizados__contenido--img1" src="../img/icono-reparacion.png" alt="icono-reparación">
+                </div>
+                <div class="serviciosRealizados__contenido">
+                    <h3>Mantenimiento</h3>
+                    <p>Una estrategia inteligente! Un mantenimiento preventivo o correctivo te permite estar un paso adelante de cualquier problema, esto te puede llegar a evitar gastos que duplican o triplican un mantenimiento o incluso la perdida de la maquina por excesivo deterioro. Nosotros buscaremos los puntos mas críticos de la maquina que requieren atención en el momento, analizamos el funcionamiento y estado de sus partes y como guardar y alargar la vida útil de esta.</p>
+                    <img class="serviciosRealizados__contenido--img2" src="../img/icono-ahorro.png" alt="icono-mantenimiento-preventivo">
+                </div>
+                <div class="serviciosRealizados__contenido">
+                    <h3>Automatización</h3>
+                    <p>Todo se renueva! Las maquinas y la tecnología avanza, tenemos la idea que lo de antes es mejor, pero hemos tenido grandes logros en la industria y adaptarse te ayudara a avanzar. La idea de la automatización es el ahorro de energía y tiempo, sabemos que esto a la final se resume en dinero. Podemos diseñarte y adaptar nuevos programas y sistemas a tu conveniencia , además encontramos la manera mas económica sin arriesgar la calidad con repuestos Industria Argentina.</p>
+                    <img class="serviciosRealizados__contenido--img3" src="../img/icono-automatizacion.png" alt="icono-automatización">
+                </div>
+                <div class="serviciosRealizados__contenido">
+                    <h3>Asesoría</h3>
+                    <p>Consúltanos ! Con la ayuda de nuestra experiencia y conocimiento técnico te llevaremos en el camino correcto para tus proyectos , asi de encontrar la respuesta mas acorde o correcta siempre enfocados en el bienestar del cliente.</p>
+                    <img class="serviciosRealizados__contenido--img4" src="../img/icono-asesoria.png" alt="icono-asesoria">
+                </div>
+                <div class="serviciosRealizados__contenido">
+                    <img class="serviciosRealizados__contenido--img5" src="../img/icono-ahorro.png" alt="icono-ahorro">
+                    <div class="serviciosRealizados__contenido--texto">
+                        <p>Precios especiales para técnicos y empresas de maquinaria.</p>
+                    </div>
+                    
+                </div>
+            </section><!-- fin descripcion de servicios -->
+        </main>
+    </div>
+    <section class="formularioContacto" id="formularioServicios"> <!--inicio formulario-->
+        <h2>Solicita nuestros servicios</h2>
+        <p>Por favor, introduce tus datos y te responderemos tan pronto nos sea posible.</p>
+        <form class="formularioContacto__formulario" action="enviar.php">
+            <div>
+                <label class="formularioContacto__formulario--nombre" for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="formularioContacto__formulario--email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Ingrese su email">
+            </div>
+            <div class="formularioContacto__formulario--solicitante">
+                <label for="solicitante">Servicio solicitado por:</label>
+                    <select name="solicitante" id="solicitante">
+                        <option value="lavadero">Lavedero</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="laundry">Laundry consorcio</option>
+                        <option value="empresa">Empresa privada</option>
+                        <option value="tecnico">Técnico</option>
+                        <option value="particular">Particular</option>
+                    </select>
+            </div>
+                <div class="formularioContacto__formulario--adjunto">
+                    <label  for="adjunto">Ingrese foto o video de la máquina: </label>
+                    <input type="file" id="adjunto">
+                </div>
+            <div class="formularioContacto__formulario--interes">
+                <label  for="interes">Estoy interesado en: </label>
+                <span class="interes1"><input type="radio" name="interes" value="00">Consulta </span>
+                <span class="interes2"><input type="radio" name="interes" value="01"> Presupuesto</span>
+            </div>
+            <div class="formularioContacto__formulario--mensaje">
+                <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Comentá, en que podemos ayudarte?"></textarea>
+            </div>
+            <input class="formularioContacto__formulario--boton" type="submit" value="Hacé tu pedido">
+            <input class="formularioContacto__formulario--boton" type="reset" value="Borrar todo">
+        </form>
+    </section><!-- fin formulario -->         
+    <footer class="footer">
+        <p>Arcoltec, ARGENTINA. Servicio técnico a domicilio para maquinas comerciales de lavado y secado. Atención a lavaderos , hoteles , laundries,<br> lavaderos autoservicio y particulares. <br>Servicio principal en Capital federal, atención a nivel nacional.</p>
+        <p>Encontrá <span><a href="servicios.html">aquí</a></span> las marcas que trabajamos.</p>
+        <p>Probá los <span><a href="./productos.html">productos industria Argentina</a></span>, calidad, economía y ahorro , haz clic aqui para saber más.
+        </p>
+        <div class="footer__redes">
+            <button><a href="./contacto.html">Click aquí para contactarnos</a></button>
+            <div class="footer__redes--iconos">
+            <h3>Redes sociales</h3>
+                <a href="https://www.facebook.com/Arcoltec" Target=_blank><img src="../img/icono-facebook.png" alt="icono-facebook"></a>
+                <a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank><img src="../img/icono-youtube.png" alt="icono-youtube"></a>
+                <a href="https://www.instagram.com/arcoltec/" Target=_blank><img src="../img/icono-instagram.png" alt="icono-instagram"></a>
+            </div>
+        </div>
+    </footer><!-- fin footer -->
+</body>
+</html>
+

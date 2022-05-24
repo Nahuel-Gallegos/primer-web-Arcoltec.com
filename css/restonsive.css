@@ -1,0 +1,293 @@
+/*///////////MOBILE MAX-WIDTH 600px///////////////*/
+@media (max-width: 600px){
+
+    /*///////////////////FOOTER//////////////////*/
+
+.footer{
+    height: auto;
+}
+.footer_grid{
+    grid-template-columns: 2.5fr .5fr 1.2fr;
+ }
+ .footer p, footer h3, footer a{
+    font-size: 12px;
+ }
+ /*////////////////////HEADER/////////////////*/
+ .bannerHeader__contenedorLogo{
+    grid-template-columns: .5fr 2fr .5fr;
+ }
+    /*//////////////index//////////////////*/
+
+    /*contacto*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background: linear-gradient(170deg, rgb(8,0,42) 30% , rgb(10, 0, 62), rgb(15, 0, 88));
+}
+.contacto__2{
+    border-top: 5px solid rgb(8, 0, 42);
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+.contacto__1{
+    height: 50%;
+}
+
+/*Soluciones tecnicas*/
+.solucionesBrindadas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.solucionesBrindadas__servicios, .solucionesBrindadas__productos, .solucionesBrindadas__asesoramiento{
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .95);
+   
+}
+.solucionesBrindadas ul li{
+    font-weight: 600;
+    text-align: start;
+}
+
+/*Marcas que trabajamos*/
+
+.marcasTrabajadas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,1fr) ;
+}
+.marcasTrabajadas h2{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-bottom: 1%;
+}
+#speedQueen{
+    grid-column: 1/2 ;
+    grid-row:2/3 ;
+}
+#maytag{
+    grid-column: 2/3 ;
+    grid-row: 2/3 ;
+}
+#marva{
+    grid-column: 3/4 ;
+    grid-row: 2/3 ;
+    height: auto;
+    margin: auto;
+    width: 70%;
+}
+#girbau{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#adc{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#cissell{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#wascomat{
+    grid-column: 1/2 ;
+    grid-row: 4/5 ;
+}
+#primus{
+    grid-column: 2/3 ;
+    grid-row: 4/5 ;
+    height: auto;
+    margin: auto;
+    width: 70%;
+}
+#uniMac{
+    grid-column: 3/4 ;
+    grid-row: 4/5;
+}
+#dexter{
+    grid-column:1/2 ;
+    grid-row: 5/6;
+    width: 40%;
+}
+
+#ipso{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+#refe{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+/*atencion a*/
+.atencion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+}
+.atencion__lavadero{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.atencion__hotel{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.atencion__tintoreria{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.atencion__geriatrico{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.atencion__particular{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    height: 100px;
+    width: auto;
+}
+/*testimonio*/
+.carrusel{
+    width: 75%;
+    height: 29rem;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.iconoDeCliente{
+    width: 4em;
+    height: auto;
+    position: absolute;
+    top: 36.5%;
+    right: .9%;
+    
+}
+.testimonio__cliente{
+    height: 480px;
+}
+.imgDeCliente{
+    height: 50%;
+}
+
+/*////////////CONTACTO//////////////*/
+
+.infoContacto{
+    grid-template-columns: 1fr 1fr;
+}
+
+.formularioContacto__formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formularioContacto__formulario label{
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.formularioContacto__formulario input,.formularioContacto__formulario span, .formularioContacto__formulario textarea,.formularioContacto__formulario select {
+    margin-top: 2px;
+    width: 100%;
+}
+.formularioContacto__formulario input[type="radio"]{
+    width: auto;
+}
+.formularioContacto__formulario span{
+    text-align: center;
+}
+
+
+}
+
+
+
+
+
+
+/*/////////////TABLET MIN-WIDTH 601px MAX-WIDTH 1024px/////////////////*/
+    @media (min-width: 600px) and (max-width: 1024px){
+
+}
+
+/*////////////////menu desplegable compartido entre tablet y mobile/////////////////*/
+@media (max-width: 1024px){
+    .margenesContenido{
+        max-width: 95%;
+    }
+    .atencion{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+/*menu desplegable*/
+
+.navegador__navegador--barra{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.bar-btn{
+    display: block;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.menu_navegador{
+    position: absolute;
+    width: 100vw;
+    height: 0vh;
+    top: 50px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+    right: 10px;
+}
+.menu_navegador ul{
+    margin: 0;
+    display: none;
+    transition: all .5s;
+}
+.menu_navegador ul li{
+    line-height: 30px;
+    margin: 30px 30px;
+    transition: all .5s;
+}
+.navegador__navegador ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.menu_navegador li a.activado, .menu_navegador li a:hover{
+    color: rgb(181, 38, 38);
+    transition: all .5s;
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ .menu_navegador{
+    height: 100vh;
+}
+
+#check:checked ~ .menu_navegador ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+}
+
+/*/////////////////DESKTOP MIN-WIDTH 1025px INFINITE//////////////////////////*/
+
+/*hice un desktop first por lo cual la pagina esta por defecto configurada para esta dimension*/

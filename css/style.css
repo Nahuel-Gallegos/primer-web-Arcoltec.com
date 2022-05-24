@@ -1,0 +1,1197 @@
+/*///////////////////////////////////INICIO STYLE GENERAL/////////////////////////////////////////*/
+body {
+    font-family: 'Roboto Flex', cursive; /*familia de fuente*/
+    font-weight: 400; /*grosor de fuente*/
+    color:black; /*color de la fuente*/
+    /* background-color: aqua; color de fondo*/
+    background-color: rgb(255, 252, 243);
+    box-sizing: border-box;
+}
+h1, h2, h3, h4{
+    font-family: 'Roboto Serif', serif;
+    font-size: 300;
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(10, 0, 49);
+    text-shadow: 1px 1px rgba(0, 0, 0,20%);
+    text-align: center;
+    padding-bottom: 20px;
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    color: rgb(10, 0, 49);
+}
+p{
+    color:rgb(98, 98, 98);
+}
+ul{
+    list-style-image: url(../img/vinieta.png);
+}
+li{
+    color:rgb(98, 98, 98);
+}
+.margenesContenido{
+    max-width: 85%;
+    margin: 0 auto;
+}
+img{
+    height: 50px;
+}
+.backgroundGris{
+    padding: 20px 7.5% 20px 7.5%;
+    background-color: rgba(14, 5, 49, 0.07);
+}
+/*/////////////////////////////HEADER/////////////////////////\//////*/
+/*///////////////BARRA DE NAVEGACION CON MINILOGO///////////////////*/
+header{
+    height: 350px;
+}
+.navegador {
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(10, 0, 49);
+    padding: 5px 5px;
+    height: 40px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 30%);
+    z-index: 3;
+}
+.navegador__navegador{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.navegador__LogoPequenio{
+    display: inline-block;
+}
+.navegador__LogoPequenio img{
+    display: inline;
+    width: 25px;
+    height: 25px;
+    padding:5px;
+    padding-top: 7px;
+}
+.navegador__LogoPequenio p{
+    display: inline;
+    position: relative;
+    top: -20px;
+    font-size: 12px;
+    color: white;
+}
+.navegador__LogoPequenio p span{
+    position: relative;
+    right: 95px;
+    top:15px;
+}
+#check, .bar-btn{
+    display: none;
+}
+.navegador__navegador, .navegador__navegador ul{
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.menu_navegador li a.activado{
+    color: rgb(181, 38, 38);
+    font-weight: 600;
+}
+.navegador__navegador ul li a {
+    color:white;
+    font-size: 14px;
+    text-decoration: none;
+    transition:all 1s;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.navegador__navegador ul li a:hover{
+
+    color: rgb(181, 38, 38);
+   
+}
+
+/*/////////////BANNER HEADER//////////////////*/
+.bannerHeader{
+    text-align: center;
+}
+
+.bannerHeader__fondo{
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    box-shadow: 0px 1px 20px rgb(0, 0, 0);
+}
+.bannerHeader__logo{
+    position: relative;
+    bottom: 230px;
+    z-index: 1;
+} 
+.bannerHeader__contenedorLogo{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+ }
+ .bannerHeader__logo{
+    grid-column: 2/3;
+    line-height: 30px;
+    width: 100%;
+    z-index: 1;
+}
+.bannerHeader__logo img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.bannerHeader__logo h1{
+    padding-top:10px;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
+}
+
+.bannerHeader__logo--tituloIndex h1{
+    padding-top:10px;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
+}
+.bannerHeader__logo--tituloOtros h1{
+    position: relative;
+    bottom: 250px;
+    padding-top:10px;
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing:15px;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
+    text-transform: uppercase;
+   
+}
+.bannerHeader__logo--tituloOtros{
+    grid-column: 2/3;
+    width: 100%;
+}
+.bannerHeader__logo--tituloOtros span{
+    letter-spacing:0;
+}
+
+/*////////////FOOTER/////////////*/
+.footer{
+    background: linear-gradient(90deg, rgb(10,0,49) 20%, rgb(0, 0, 0));
+    margin-top: 40px;
+    padding: 10px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+ }
+ .footer_grid{
+    display:grid;
+    grid-template-columns: 2.5fr 1.5fr 1.2fr;
+    width: 100%;
+    margin: auto;
+    
+ }
+ .footer p, footer h3, footer a{
+    color:rgb(255, 255, 255);
+    font-size: 10px;
+ }
+ .footer p{
+    padding-top: 10px;
+    margin: 0;
+ } .footer p:nth-child(1){
+    padding: 0;
+ }
+.footer button{
+    border:none;
+    background-color: rgba(0, 0, 0, 0%);
+    width: auto;
+    padding: 0;
+ }
+ .footer button a{
+    font-size: 15px;
+
+ }
+ .footer__redes{
+     padding-left: 0%;
+     grid-column: 3/4;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+
+ }
+ .footer__redes--iconos h3{
+    display:block;
+    font-size: 15px;
+    font-weight: 500;
+ }
+.footer__redes--iconos{
+    display: block;
+    width: 130px;
+    text-align: center;
+}
+.footer__redes--iconos img{
+    height: 35px;
+
+}
+
+/*////////////FORMULARIO GENERAL///////////////////*/
+.formularioContacto{
+    max-width: 85%;
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 1px rgba(10, 0, 49, 0.464);
+    border-radius: 15px;
+    padding: 20px;
+}
+.formularioContacto h2{
+    font-weight: 400;
+    color: rgb(10, 0, 49);
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: 0px;
+}
+.formularioContacto p{
+    color:rgb(130, 130, 130);
+    
+}
+.formularioContacto__formulario{
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.formularioContacto__formulario label{
+    grid-column: 1/2;
+    text-align: end;
+    margin: 5px;
+}
+.formularioContacto__formulario input,.formularioContacto__formulario span, .formularioContacto__formulario textarea,.formularioContacto__formulario select {
+    grid-column: 2/3;
+    margin: 5px;
+}
+.formularioContacto__formulario--boton{
+    border-radius: 20px;
+    border-color: rgb(130, 130, 130);
+    border: solid 2px rgb(79, 79, 79);
+    box-shadow: 1px 2px 5px rgb(130, 130, 130);
+    background-color: rgb(255, 252, 243);
+    padding: 5px;
+    font-family: 'Roboto Serif', serif;
+    cursor:pointer;
+    margin: 10px;
+    max-width: 200px;
+}
+.formularioContacto__formulario--boton:hover{
+    border: solid 2px rgb(45, 45, 45);
+    box-shadow: 1px 2px 5px rgb(100, 100, 100);
+}
+
+/*///////////////////////////////////FIN STYLE GENERAL/////////////////////////////////////////*/
+
+
+
+
+/*//////////////////////////CONTACTO INDEX/////////////////////////////*/
+
+.contacto{
+    background: linear-gradient(170deg, rgb(8,0,42) , rgb(10, 0, 62), rgb(15, 0, 88));
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 5px solid rgb(8, 0, 42);
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: auto;
+}
+.contacto__1, .contacto__2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 8px;
+}
+
+.contacto h2{
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.contacto__2{
+    border-left: 5px solid rgb(8, 0, 42);
+}
+.contacto__1 p, .contacto__2 p{
+    margin-top: 0;
+    color: white;
+    font-weight: 300;
+}
+.contacto__1 button, .contacto__2 button{
+    height: 25px;
+    width: 150px;
+    padding: 0 ;
+    background-color: rgb(75, 74, 74);
+    border-bottom-right-radius: 5px;
+    border-right: 3px solid rgb(215, 0, 0);
+    border-bottom: 3px solid rgb(215, 0, 0);
+    border-top: 3px solid rgb(75, 74, 74);
+    border-left: 3px solid rgb(75, 74, 74);
+}
+.contacto__1 a button, .contacto__2 a button{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+
+/*////soluciones Brindadas///////*/
+
+.solucionesBrindadas{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 80px;
+    column-gap: 5px;
+}
+
+.solucionesBrindadas h2{
+    grid-column: 1/4;
+}
+
+.solucionesBrindadas h3{
+    margin-top: 0;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    color: rgb(10,0,49);
+    text-shadow: 1px 1px rgba(0, 0, 0,20%);
+    background-color: rgba(232, 232, 232, 0.630);
+}
+
+.solucionesBrindadas__servicios, .solucionesBrindadas__productos, .solucionesBrindadas__asesoramiento {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 175px;
+}
+
+.solucionesBrindadas__servicios{
+    background-image: url(../img/background-servicios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.solucionesBrindadas__productos{
+    background-image: url(../img/background-productos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.solucionesBrindadas__asesoramiento{
+    background-image: url(../img/background-asesoramiento.bmp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.solucionesBrindadas ul{/*hace invisible el contenido*/
+    color: rgb(10, 0, 49);
+    font-weight: 400;
+    background-color: rgba(232, 232, 232, 0.630);
+    border-radius: 5px 0 0 5px;
+    margin-left: 10px;
+}
+.solucionesBrindadas li{
+    color:rgb(10, 0, 49);
+}
+
+/*/////marcas que trabajamos//////*/
+
+.marcasTrabajadas{
+    display: grid;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    background-color: rgba(14, 5, 49, 0.07);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,.5fr);
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    gap: 10px;
+    
+}
+.marcasTrabajadas__imgLarga
+{
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+.marcasTrabajadas__imgMedia
+{
+    height: auto;
+    margin: auto;
+    width: 60%;
+}
+.marcasTrabajadas__imgCorta{
+    margin: auto;
+    height: auto;
+    width: 30%;
+    
+}
+.marcasTrabajadas h2{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    margin-bottom: 1%;
+}
+#adc{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#cissell{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#dexter{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 40%;
+}
+#girbau{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#ipso{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+#marva{
+    grid-column: 3/4 ;
+    grid-row: 2/3 ;
+    height: auto;
+    margin: auto;
+    width: 70%;
+}
+#maytag{
+    grid-column: 2/3 ;
+    grid-row: 2/3 ;
+}
+#primus{
+    grid-column: 4/5 ;
+    grid-row: 3/4 ;
+    height: auto;
+    margin: auto;
+    width: 70%;
+}
+#refe{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+#speedQueen{
+    grid-column: 1/2 ;
+    grid-row:2/3 ;
+}
+#uniMac{
+    grid-column: 1/2 ;
+    grid-row: 4/5;
+}
+#wascomat{
+    grid-column: 3/4 ;
+    grid-row: 3/4 ;
+}
+
+/*//////Productos////////*/
+
+.productos{
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+}
+.productos div{
+    text-align: center;
+}
+.productos button{
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: rgb(10, 0, 73);
+    box-shadow: 1px 2px 5px rgb(130, 130, 130);
+    background-color: rgb(10, 0, 73);
+    padding: 5px;
+    transition-duration: .5s;
+}
+.productos button a{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+}
+
+.productos button:hover{
+    box-shadow: 1px 2px 5px rgb(23, 23, 23);
+    background-color: rgb(21, 0, 158);
+    border-color: rgb(21, 0, 158);
+}
+
+
+
+/*//////////atencion a //////////*/
+
+.atencion{
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: rgba(14, 5, 49, 0.07);
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+   gap: 1%
+}
+.atencion h2{
+    grid-column: 1/6;
+}
+.atencion h3{
+    width: auto;
+    font-size: 90%;
+}
+.atencion div{
+    text-align: center;
+}
+.atencion img{
+    width: 90%;
+    height: auto;
+}
+
+
+
+/*/////Testimonios/////////*/
+
+.carrusel{
+    max-height: 30rem;
+    width: 25.5rem;
+    height: 27.5rem;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.carrusel .testimonio__cliente{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.carrusel input[type="radio"]{
+    display: none;
+}
+.carrusel input[type="radio"]:checked ~ .testimonio__cliente{
+    opacity: 1;
+}
+.carrusel input[type="radio"] + label{
+    position: relative;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(10, 0, 49);
+    margin: 3px;
+    z-index: 2;
+    cursor: pointer;
+}
+.carrusel input[type="radio"]+label:hover{
+    background: rgb(10, 0, 49);
+    border: 3px solid rgb(137, 137, 137);
+}
+.carrusel input[type="radio"]:checked + label{
+    background: rgb(10, 0, 49);
+    border: 3px solid rgb(137, 137, 137);
+}
+.testimonio__cliente{
+    width: 100%;
+    height: 27.5rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.63);
+    border-radius: 1rem;
+    background-color: rgba(14, 5, 49, 0.07);
+}
+.imgDeCliente{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+}
+.iconoDeCliente{
+    width: 5em;
+    height: auto;
+    position: absolute;
+    top: 45.5%;
+    right: .9%;
+}
+.testimonio__cliente div{
+    text-align: start;
+    position: absolute;
+    background-color: rgba(232, 232, 232, 0.630);
+    padding: 0 2%;
+    border-radius: 1rem 0 .2rem 0;
+}
+.testimonio__cliente h4{
+    margin: .5rem 0;
+}
+.testimonio__cliente p{
+    margin: .5rem 0;
+}
+.testimonio__cliente blockquote{
+    margin: .5rem .5rem;
+    text-align: center;
+}
+
+
+/*/////////nuestro equipo///////////*/
+
+
+.nuestroEquipo{
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    background-color: rgba(14, 5, 49, 0.07);
+    margin-bottom: 80px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.nuestroEquipo div{
+    text-align: center;
+}
+.nuestroEquipo button{
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: rgb(10, 0, 73);
+    box-shadow: 1px 2px 5px rgb(130, 130, 130);
+    background-color: rgb(10, 0, 73);
+    padding: 5px;
+    transition-duration: .5s;
+}
+.nuestroEquipo div button a{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+}
+
+.nuestroEquipo button:hover{
+    box-shadow: 1px 2px 5px rgb(23, 23, 23);
+    background-color: rgb(21, 0, 158);
+    border-color: rgb(21, 0, 158);
+}
+
+
+/*
+.productos{
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+}
+.productos div{
+    text-align: center;
+}
+.productos button{
+    width: 210px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: rgb(130, 130, 130);
+    border: solid 3px rgb(79, 79, 79);
+    box-shadow: 1px 2px 5px rgb(130, 130, 130);
+    background-color: rgb(255, 252, 243);
+    padding: 5px;
+
+}
+
+.productos button a{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(10,0,49);
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+}
+
+.productos button:hover{
+    border: solid 4px rgb(45, 45, 45);
+    box-shadow: 1px 2px 5px rgb(100, 100, 100);
+}
+
+*/
+
+
+
+
+
+
+
+
+ /*////////////////////////////////PAGINA SERVICIOS////////////////////////////////////////////*/
+
+.serviciosRealizados{
+    height: 1050px;
+}
+.serviciosRealizados__titulo{
+    text-align: start;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+.serviciosRealizados__titulo h2{
+    color: rgb(10, 0, 49);
+}
+.serviciosRealizados__titulo p{
+    color: rgb(100, 100, 100);
+    font-size: 20px;
+}
+
+.serviciosRealizados__contenido, .serviciosRealizados__contenido h3, .serviciosRealizados__contenido p{
+    text-align: center;
+    display: inline-block;
+    width: 350px;
+    color: rgb(100, 100, 100);
+    margin: 20px 95px
+}
+.serviciosRealizados__contenido p{
+    text-align: start;
+}
+.serviciosRealizados__contenido h3{
+    color: rgb(10, 0, 49);
+    text-align: start;
+}
+.serviciosRealizados__contenido{
+    position: relative;
+    left: 80px;
+}
+
+.serviciosRealizados__contenido:nth-child(2){
+    position: relative;
+    bottom: 92px;
+}
+.serviciosRealizados__contenido:nth-child(4){
+    position: relative;
+    bottom: 120px;
+}
+.serviciosRealizados__contenido:nth-child(5){
+    position: relative;
+    bottom: 231px;
+}
+.serviciosRealizados__contenido:nth-child(6){
+    position: relative;
+    bottom: 231px;
+    left: 350px;
+}
+.serviciosRealizados__contenido img{
+    position: relative;
+    width: 110px;
+    height: 100px;
+}
+.serviciosRealizados__contenido--img1{
+    bottom: 173px;
+    right: 160px;
+}
+.serviciosRealizados__contenido--img2{
+    bottom: 266px;
+    right: 160px;
+}
+.serviciosRealizados__contenido--img3{
+    bottom: 285px;
+    right: 160px;
+}
+.serviciosRealizados__contenido--img4{
+    bottom: 174px;
+    right: 160px;
+}
+.serviciosRealizados__contenido--img5 img{
+    bottom: 174px;
+    right: 160px;
+}
+.serviciosRealizados__contenido--texto p{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 30px;
+    width: auto;
+}
+.serviciosRealizados__contenido--texto{
+    width: 650px;
+    position: relative;
+    right: 147px;
+}
+
+/*////////modificacion formulario servicios//////////*/
+
+.formularioContacto__formulario--solicitante{
+    position:relative;
+    left: -99px;
+}
+
+
+
+
+
+/*//////////////////////////////////PAGINA SOBRE PRODUCTOS/////////////////////////////////////////////*/
+
+.bannerHeader__logo--tituloOtros p{
+    position: relative;
+    bottom: 250px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+ }
+
+
+ /*/////Modificacion formulario productos///////*/
+ .formularioContacto__formulario--telefono{
+     position:relative;
+     right: 73px;
+ }
+
+ .formularioContacto__formulario--maquina{
+    position:relative;
+    left: -79px;
+    bottom: 20px;
+}
+.formularioContacto__formulario--maquina .maquina2{
+    position:relative;
+    left: -85px;
+    top: 20px;
+}
+
+.formularioContacto__formulario--marca{
+    position: relative;
+    left: 13px;
+}
+
+/*logo productos*/
+
+#logoProductos h1{
+    letter-spacing:0px;
+}
+/*///asesoramiento/////*/
+.asesoramiento h2{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    text-align: center;
+}
+.asesoramiento__background{
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 30px;
+    background-image: url(../img/mujer-hablando-por-telefono.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:200px ;
+}
+.asesoramiento__background--boton{
+    position: relative;
+    left: 270px;
+    top: 30px;
+}
+
+.asesoramiento__background--boton button{
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgb(14, 207, 0);
+}
+.asesoramiento__background--boton button span{
+    position: relative;
+    left:20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.asesoramiento__background--boton img{
+    position:relative;
+    top: 10px;
+    left: 55px;
+    z-index: 1;
+    width: 30px;
+    height: auto;
+}
+
+
+
+/*/////Oferta de productos general///////*/
+.seleccionDeOfertas{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.seleccionDeOfertas__encabezado{
+    grid-column: 1/3;
+}
+.seleccionDeOfertas h2, .seleccionDeProductos h2{
+    text-align: center;
+    margin-left:33px;
+    margin-top: 100px;
+    color: rgb(10,0,49);
+    font-size: 30px;
+}
+.seleccionDeOfertas p{
+    color:rgb(98, 98, 98);
+    line-height: 25px;
+    font-size: 17px;
+}
+.seleccionDeOfertas div{
+    margin: auto;
+}
+.seleccionDeOfertas ul{
+    margin: auto;
+    display: inline-block;
+    padding: 0;
+}
+.seleccionDeOfertas li{
+    list-style-type:square;
+    color:rgb(98, 98, 98);
+    line-height: 35px;
+    text-align: start;
+    font-size: 21px;
+    width: 200px;
+}
+
+.seleccionDeOfertas__descuento img{
+    margin-top: 4em;
+    width: 10em;
+    height: auto;
+}
+.seleccionDeOfertas__descuento p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.seleccionDeProductos{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+}
+.seleccionDeProductos h2{
+    grid-column: 1/5;
+}
+/*//////seleccion de productos secadora/////////*/
+.seleccionDeProductos__secadora{
+    margin-bottom: 80px;
+}
+.seleccionDeProductos__secadora img{
+    width: 400px;
+    height: auto;
+}
+
+.seleccionDeProductos__secadora--contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    color:rgb(98, 98, 98);
+}
+.seleccionDeProductos__secadora--contenido h3{
+    font-size: 22px;
+    color: rgb(10,0,49);
+}
+
+.seleccionProductos__programaSecadora{
+    margin-top: 60px;
+    text-align: center;
+}
+.seleccionProductos__programaSecadora h3{
+    color: rgb(10,0,49);
+}
+.seleccionProductos__programaSecadora--principal{
+    text-align: center;
+}
+.seleccionProductos__programaSecadora--producto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(14, 5, 49, 0.07);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+}
+.seleccionProductos__programaSecadora--producto img{
+    grid-column: 1/2;
+    width: 25em;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 5px 5px 0 0;
+}
+.seleccionProductos__programaSecadora--producto div{
+    grid-column: 2/3;
+    padding: 10px;
+}
+.seleccionProductos__programaSecadora--producto p{
+    font-weight: 600;
+}
+.seleccionProductos__programaSecadora--producto p, .seleccionProductos__programaSecadora--producto ul{
+    text-align: start;
+}
+/*//////////////carrusel //////////////*/
+.seleccionDeProductos__secadora--trabajosRealizados {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.seleccionDeProductos__secadora--trabajosRealizados ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	animation: cambio 10s infinite alternate linear;
+}
+
+.seleccionDeProductos__secadora--trabajosRealizados li {
+	width: 100%;
+	list-style: none;
+}
+
+.seleccionDeProductos__secadora--trabajosRealizados img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left:100%;}
+	0% {margin-left:100%;}
+	
+	0% {margin-left: 0%;}
+	25% {margin-left: 0%;}
+	
+	33% {margin-left: -100%;}
+	66% {margin-left: -100%;}
+	
+	75% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+/*/////fin carrusel////////*/
+
+/*/////productos lavadora descripcion/////*/
+.seleccionProductos__lavadoras--contenido{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.seleccionProductos__lavadoras--contenido img{
+    grid-column: 1/2;
+    width: 600px;
+    height: auto;
+}
+.seleccionProductos__lavadoras--contenido div{
+    grid-column: 2/3;
+}
+
+/*productos para lavadora*/
+.seleccionProductos__lavadoras--ofertaLavadora{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+}
+.seleccionProductos__lavadoras--ofertaLavadoraDescripcion{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.seleccionProductos__lavadoras--ofertaLavadoraProducto{
+    margin: 2em;
+    background-color: rgba(14, 5, 49, 0.07);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+}
+.seleccionProductos__lavadoras--ofertaLavadoraProducto img{
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 5px 5px 0 0;
+}
+.seleccionProductos__lavadoras--ofertaLavadoraProducto div{
+    padding: 10px;
+}
+.seleccionProductos__lavadoras--ofertaLavadoraProducto #programa-generico{
+    grid-column: 2/3;
+}
+
+/*////////////////////////////////PAGINA SOBRE NOSOTROS////////////////////////////////////////////*/
+
+.nosotros{
+    color:rgb(98, 98, 98);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 85%;
+ }
+ .nosotros img{
+     width: 500px;
+     height: auto;
+     border-radius: 10px;
+ }
+ .nosotros h2{
+     grid-column: 1/3;
+     grid-row: 1/2;
+     
+     font-size: 40px;
+     padding: 0 0 50px 45px;
+     color: rgb(10,0,49);
+ }
+ .nosotros p{
+     margin: 0;
+     line-height: 35px;/*interlineado*/
+     font-size: 15px;
+     padding: 0 20px;
+ }
+
+/*//////////////////////////PAGINA DE CONTACTO/////////////////////////////////////*/
+
+
+/*///////Informacion contacto///////////*/
+
+.bannerHeader__logo h1{
+    font-weight: 600;
+}
+.tituloContacto{
+    font-weight: 400;
+    color:rgb(130, 130, 130);
+    margin-top: 50px;
+    text-align: start;
+}
+.infoContacto{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    margin-bottom: 80px;
+    gap: 20px;
+}
+
+.infoContacto h3{
+    color: rgb(10, 0, 49);
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.infoContacto p{
+    margin-top: 10px;
+    display: inline;
+}
+.infoContacto p a{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+ 
+ 
