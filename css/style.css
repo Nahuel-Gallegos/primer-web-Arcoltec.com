@@ -218,8 +218,14 @@ header{
  }
  .footer button a{
     font-size: 15px;
+    transition: all .5s;
 
  }
+ .footer button a:hover{
+    color: rgb(181, 38, 38);
+    font-size: 18px;
+ }
+
  .footer__redes{
      padding-left: 0%;
      grid-column: 3/4;
