@@ -13,30 +13,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,400;0,8..144,700;1,8..144,400&display=swap" rel="stylesheet">  
     <!-- Titulos font-family: 'Roboto Serif', serif; //////// contenido font-family: 'Roboto Flex', sans-serif;-->
     <script src="https://kit.fontawesome.com/b6ce468d03.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!--bootstrap css y js-->
 </head>
 <body>
     <header>
-        <div class="navegador">
-            <nav class="navegador__navegador">
-                    <div class="navegador__LogoPequenio">
-                        <a href="./index.html"><img src="../img/logoPequeño.png" alt="logo-pequeño" href="index.html"></a>
-                        <p>Calidad industrial<span> Calidad humana<span></p>
+        <!--
+            <div class="navegador">
+                <nav class="navegador__navegador">
+                        <div class="navegador__LogoPequenio">
+                            <a href="./index.html"><img src="../img/logoPequeño.png" alt="logo-pequeño" href="index.html"></a>
+                            <p>Calidad industrial<span> Calidad humana<span></p>
+                        </div>
+                        <input type="checkbox" id="check" name="bar">
+                        <label for="check" class="bar-btn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                    <div class="menu_navegador">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./servicios.html">Servicios</a></li>
+                            <li><a href="./productos.html">Productos</a></li>
+                            <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
+                            <li><a href="contacto.html" class="activado">Contacto</a></li>
+                        </ul>
                     </div>
-                    <input type="checkbox" id="check" name="bar">
-                    <label for="check" class="bar-btn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                <div class="menu_navegador">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                        <li><a href="contacto.html" class="activado">Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
+        -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img src="../img/logoPequeño.png" alt="logo-pequeño" href="index.html"></a>
+              <div class="navbar-containerLeyendaLogo me-auto">
+                <p>Calidad industrial</p>
+                <p>Calidad humana</p>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
         <div class="bannerHeader">
             <img class="bannerHeader__fondo" src="../img/bgHeader1.webp" alt="banner-principal">
             <div class="bannerHeader__contenedorLogo">
@@ -127,26 +161,7 @@
                 </div>
             </div>
         </div>
-    </footer><!-- fin footer 
-       <footer class="footer">
-                <div class="margenesContenido footer_grid">
-                    <div>
-                        <p>Arcoltec, ARGENTINA. Servicio técnico a domicilio para maquinas comerciales de lavado y secado. Atención a lavaderos , hoteles , laundries,<br> lavaderos autoservicio y particulares. <br>Servicio principal en Capital federal, atención a nivel nacional.</p>
-                        <p>Encontrá <span><a href="./servicios.html">aquí</a></span> las marcas que trabajamos.</p>
-                        <p>Probá los <span><a href="./productos.html">productos industria Argentina</a></span>, calidad, economía y ahorro , haz clic aqui para saber más.
-                        </p>
-                    </div>
-                    <div class="footer__redes">
-                        <button><a href="./contacto.html">Click aquí para contactarnos</a></button>
-                        <div class="footer__redes--iconos">
-                        <h3>Redes sociales</h3>
-                            <a href="https://www.facebook.com/Arcoltec" Target=_blank><img src="../img/icono-facebook.png" alt="icono-facebook"></a>
-                            <a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank><img src="../img/icono-youtube.png" alt="icono-youtube"></a>
-                            <a href="https://www.instagram.com/arcoltec/" Target=_blank><img src="../img/icono-instagram.png" alt="icono-instagram"></a>
-                        </div>
-                    </div>
-                </div>
-            </footer> fin footer -->
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -50,70 +50,23 @@ img{
 header{
     height: 350px;
 }
-.navegador {
-    position: fixed;
-    display:flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: rgb(10, 0, 49);
-    padding: 5px 5px;
-    height: 40px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 30%);
-    z-index: 3;
-}
-.navegador__navegador{
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-}
-.navegador__LogoPequenio{
-    display: inline-block;
-}
-.navegador__LogoPequenio img{
-    display: inline;
-    width: 25px;
-    height: 25px;
+
+.navbar-brand img{
+    width: 40px;
+    height: auto;
     padding:5px;
-    padding-top: 7px;
 }
-.navegador__LogoPequenio p{
-    display: inline;
-    position: relative;
-    top: -20px;
+.navbar-containerLeyendaLogo{
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar-containerLeyendaLogo p{
     font-size: 12px;
     color: white;
+    margin: 0;
 }
-.navegador__LogoPequenio p span{
-    position: relative;
-    right: 95px;
-    top:15px;
-}
-#check, .bar-btn{
-    display: none;
-}
-.navegador__navegador, .navegador__navegador ul{
-    margin-right: 5px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-.menu_navegador li a.activado{
-    color: rgb(181, 38, 38);
-    font-weight: 600;
-}
-.navegador__navegador ul li a {
-    color:white;
-    font-size: 14px;
-    text-decoration: none;
-    transition:all 1s;
-    text-transform: uppercase;
-    padding: 0 10px;
-}
-.navegador__navegador ul li a:hover{
 
-    color: rgb(181, 38, 38);
-   
-}
 
 /*/////////////BANNER HEADER//////////////////*/
 .bannerHeader{
@@ -166,7 +119,7 @@ header{
 }
 .bannerHeader__logo--tituloOtros h1{
     position: relative;
-    bottom: 250px;
+    bottom: 190px;
     padding-top:10px;
     color: white;
     font-weight: normal;
@@ -189,7 +142,7 @@ header{
     background: linear-gradient(90deg, rgb(10,0,49) 20%, rgb(0, 0, 0));
     margin-top: 40px;
     padding: 10px;
-    height: 125px;
+    height: auto;
     display: flex;
     align-items: center;
  }
@@ -315,7 +268,7 @@ header{
     margin-bottom: 50px;
     border-radius: 5px;
     border: 5px solid rgb(8, 0, 42);
-    height: 150px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: auto;
@@ -414,6 +367,7 @@ header{
     background-color: rgba(232, 232, 232, 0.630);
     border-radius: 5px 0 0 5px;
     margin-left: 10px;
+    padding-left: 45px;
 }
 .solucionesBrindadas li{
     color:rgb(10, 0, 49);
@@ -578,65 +532,7 @@ header{
 
 /*/////Testimonios/////////*/
 
-.carrusel{
-    max-height: 30rem;
-    width: 25.5rem;
-    height: 28.8rem;
-    margin: auto;
-    padding: 0;
-    position: relative;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.carrusel .testimonio__cliente{
-    position:absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: .5s;
-}
 
-.carrusel input[type="radio"]{
-    display: none;
-}
-.carrusel input[type="radio"]:checked ~ .testimonio__cliente{
-    opacity: 1;
-}
-.carrusel input[type="radio"] + label{
-    position: relative;
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: rgb(255, 255, 255);
-    border: 3px solid rgb(10, 0, 49);
-    margin: 3px;
-    z-index: 2;
-    cursor: pointer;
-}
-.carrusel input[type="radio"]+label:hover{
-    background: rgb(10, 0, 49);
-    border: 3px solid rgb(137, 137, 137);
-}
-.carrusel input[type="radio"]:checked + label{
-    background: rgb(10, 0, 49);
-    border: 3px solid rgb(137, 137, 137);
-}
-.testimonio__cliente{
-    width: 100%;
-    height: 29rem;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.63);
-    border-radius: 1rem;
-    background-color: rgba(14, 5, 49, 0.07);
-}
-.imgDeCliente{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem 1rem 0 0;
-}
 .iconoDeCliente{
     width: 5em;
     height: auto;
@@ -644,23 +540,11 @@ header{
     top: 45.5%;
     right: .9%;
 }
-.testimonio__cliente div{
-    text-align: start;
-    position: absolute;
-    background-color: rgba(232, 232, 232, 0.630);
-    padding: 0 2%;
-    border-radius: 1rem 0 .2rem 0;
-}
-.testimonio__cliente h4{
-    margin: .5rem 0;
-}
+
 .testimonio__cliente p{
     margin: .5rem 0;
 }
-.testimonio__cliente blockquote{
-    margin: .5rem .5rem;
-    text-align: center;
-}
+
 
 
 /*/////////nuestro equipo///////////*/

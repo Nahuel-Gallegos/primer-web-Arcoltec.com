@@ -12,11 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,400;0,8..144,700;1,8..144,400&display=swap" rel="stylesheet">  
     <!-- Titulos font-family: 'Roboto Serif', serif; //////// contenido font-family: 'Roboto Flex', sans-serif;-->
-    <script src="https://kit.fontawesome.com/b6ce468d03.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/b6ce468d03.js" crossorigin="anonymous"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!--bootstrap css y js-->
 </head>
 <body>
     <header>
-        <div class="navegador">
+       <!-- <div class="navegador">
             <nav class="navegador__navegador">
                     <div class="navegador__LogoPequenio">
                         <a href="./index.html"><img src="./img/logoPequeño.png" alt="logo-pequeño" href="index.html"></a>
@@ -36,7 +37,38 @@
                     </ul>
                 </div>
             </nav>
-        </div>
+        </div>-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img src="./img/logoPequeño.png" alt="logo-pequeño" href="index.html"></a>
+              <div class="navbar-containerLeyendaLogo me-auto">
+                <p>Calidad industrial</p>
+                <p>Calidad humana</p>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./html/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./html/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/sobre-nosotros.html">Sobre nosotros</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./html/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
         <div class="bannerHeader">
             <img class="bannerHeader__fondo" src="./img/bgHeader1.webp" alt="banner-principal">
             <div class="bannerHeader__contenedorLogo">
@@ -49,269 +81,182 @@
             </div>
         </div>
     </header>
-        <main><!-- inicio contenido principal -->
-            <div class="margenesContenido">
-                <h2>Contactate con nosotros</h2>    
-                <section class="contacto">
-                    <div class="contacto__1">
-                        <p>Si deseas asesorarte en línea con un técnico o recibir mas información escríbenos y te atenderemos cualquier consulta a la mayor brevedad</p>
-                        <div>
-                            <a href="https://wa.me/541163646692"><button>Whatsapp</button></a>
-                        </div>
-                        
-                    </div>
-                    <div class="contacto__2">
-                        <p>Si tu consulta es urgente podes llamarnos a los siguientes números telefónicos: </p>
-                        <div>
-                            <a href="tel:+541163646692"><button>+541163646692</button></a>
-                            <a href="tel:+541125882434"><button>+541125882434</button></a>
-                        </div>
-
-                    </div>
-                </section><!-- fin contacto -->
-                <section class="solucionesBrindadas">
-                    <h2>Soluciones técnicas</h2>
-                    <div class="solucionesBrindadas__servicios">
-                        <h3>Servicios</h3>
-                        <ul>
-                            <li>Reparación, mantenimiento e instalación de lavadoras y secadoras comerciales e industriales. </li>
-                            <li>Automatización y adaptación de programas universales</li>
-                        </ul>
-                    </div>
-                    <div class="solucionesBrindadas__productos">
-                    
-                        <h3>Productos</h3>
-                        <ul>
-                            <li>Venta de productos para automatización de maquinas de lavado y secado</li>
-                        </ul>
-                    </div>
-                    <div class="solucionesBrindadas__asesoramiento">
-                        <h3>Asesoramiento</h3>
-                        <ul>
-                            <li>Contactate con nuestros expertos para asesorarte sobre los cuidados y mantenimiento de tus maquinas.</li>
-                            <li>Atención a técnicos</li>
-                        </ul>
-                    </div>
-                </section><!-- fin servicios -->
-            </div><!--fin margen-->
-            <section class="marcasTrabajadas" >
-                <h2>Marcas que trabajamos</h2>
-                <img class="marcasTrabajadas__imgMedia" id="adc" src="./img/adc.png" alt="marca-lavadoras-y-secadoras-adc">
-                <img class="marcasTrabajadas__imgMedia" id="cissell" src="./img/cissel.png" alt="marca-lavadoras-y-secadoras-cissel">
-                <img class="marcasTrabajadas__imgCorta" id="dexter" src="./img/dexter.png" alt="marca-lavadoras-y-secadoras-dexter">
-                <img class="marcasTrabajadas__imgLarga" id="girbau" src="./img/girbau.png" alt="marca-lavadoras-y-secadoras-girbau">
-                <img class="marcasTrabajadas__imgCorta" id="ipso" src="./img/ipso.png" alt="marca-lavadoras-y-secadoras-ipso">
-                <img class="marcasTrabajadas__imgLarga" id="marva" src="./img/marva.png" alt="marca-lavadoras-y-secadoras-marva">
-                <img class="marcasTrabajadas__imgMedia" id="maytag" src="./img/maytag.png" alt="marca-lavadoras-y-secadoras-maytag">
-                <img class="marcasTrabajadas__imgLarga" id="primus" src="./img/primus.png" alt="marca-lavadoras-y-secadoras-primus">
-                <img class="marcasTrabajadas__imgMedia" id="refe" src="./img/refe.png" alt="marca-lavadoras-y-secadoras-refe">
-                <img class="marcasTrabajadas__imgLarga" id="speedQueen" src="./img/speed-queen.png" alt="marca-lavadoras-y-secadoras-speed-queen">
-                <img class="marcasTrabajadas__imgMedia" id="uniMac" src="./img/unimac.png" alt="marca-lavadoras-y-secadoras-unimac">
-                <img class="marcasTrabajadas__imgLarga" id="wascomat" src="./img/wascomat.png" alt="marca-lavadoras-y-secadoras-wascomat">
-            </section><!-- fin marcas que trabajamos -->
-        </main>
+    <main><!-- inicio contenido principal -->
         <div class="margenesContenido">
-            <section class="productos">
-                <h2>Productos para automatización</h2>
-                <div>
-                <button><a href="./html/productos.html">Más información</a></button>
-                </div>
-            </section><!-- fin productos -->
-        </div>
-        <section class="atencion">
-            <h2>Atención a:</h2>
-            
-            <div class="atencion__lavadero">
-                <img src="./img/icono lavadero.png" alt="icono-lavaderos">
-                <div>
-                    <h3>Lavaderos</h3>
-                </div>
-            </div>
-            <div class="atencion__hotel">
-                <img src="./img/icono hotel.png" alt="icono-hotel">
-                <h3>Hoteles</h3>
-            </div>
-            <div class="atencion__tintoreria">
-                <img src="./img/icono tintoreria.png" alt="icono-tintoreria">
-                <h3>Tintorerias</h3>
-            </div>
-            <div class="atencion__geriatrico">
-                <img src="./img/icono geriatrico.png" alt="icono-geriatrico">
-                <h3>Geriátricos</h3>
-            </div>
-            <div class="atencion__particular">
-                <img src="./img/icono particular.png" alt="icono-particular">
-                <h3>Particulares</h3>
-            </div>
-        </section><!-- fin a quien atendemos -->
-            <section class="testimonios">
-                <h2>Testimonios</h2>
-                <ul class="carrusel">
-                    <li>
-                        <input type="radio" id="cBoton1" name="cRadio" class="input" checked>
-                        <label for="cBoton1"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>Guillermo Baque</h4>
-                                <p>Director / General Belgrano</p> 
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/guillermo-baque-hotel.jpg" alt="cliente-hotel">
-                            <img class="iconoDeCliente" src="./img/icono hotel.png" alt="icono-hotel">
-                            <blockquote>"Esto era chatarra. Estos genios dejaron en horas un hermoso Lavarropas industrial que no había quien lo arregle. Con profesionalismo. Juventud y ganas de trabajar demostraron cómo hay jóvenes que tiene cultura del trabajo. Gracias genios!! Ahhh otra cosa no menos importante son muy honestos."</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton2" name="cRadio">
-                        <label for="cBoton2"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>Adrian Zorrilla</h4>
-                                <p>Director / Lavadero San Cayetano</p> 
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/adrian-zorrilla-lavadero.jpg" alt="cliente-lavadero">
-                            <img class="iconoDeCliente" src="./img/icono lavadero.png" alt="icono-lavadero">
-                            <blockquote>"Atendieron mi reclamo con rapidez y muy rápido..gente seria y responsable para recomendar se ganaron un cliente"</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton3" name="cRadio">
-                        <label for="cBoton3"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                            <h4>Ana Chavez</h4>
-                            <p>Director / El lavadero de paquita</p>
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/ana-chavez-lavadero.jpeg" alt="cliente-lavadero">
-                            <img class="iconoDeCliente" src="./img/icono lavadero.png" alt="icono-lavadero">
-                            <blockquote>"Quiero recomendar al 100% el trabajo de Diana. Siempre realiza sus trabajos con mucha responsabilidad. Nunca he tenido ningún inconveniente. Gente muy cálida y profesional!
-                                Saludos!
-                                Ana"</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton4" name="cRadio">
-                        <label for="cBoton4"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>David Chavez</h4>
-                                <p>Director / Laverap Villa Luro</p>
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/david-chavez-lavadero.jpg" alt="cliente-lavadero">
-                            <img class="iconoDeCliente" src="./img/icono lavadero.png" alt="icono-lavadero">
-                            <blockquote>"Buen servicio y atención a tiempo."</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton5" name="cRadio">
-                        <label for="cBoton5"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>Geriátrico del Rosario</h4>
-                                <p>Director / Geriátrico del Rosario</p>
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/getriatrico-del-rosario.jpg" alt="cliente-geriatrico">
-                            <img class="iconoDeCliente" src="./img/icono geriatrico.png" alt="icono-geriatrico">
-                            <blockquote>"Excelente servicio, profesionales y puntuales.Muy recomendable."</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton6" name="cRadio">
-                        <label for="cBoton6"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>Ariel Greco</h4>
-                                <p>Director / Lavadero Las lilas</p>
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/las-lilas-lavadero.jpg" alt="cliente-lavadero">
-                            <img class="iconoDeCliente" src="./img/icono lavadero.png" alt="icono-lavadero">
-                            <blockquote>"Super responsables. Respondieron rapido a mi problema dentro de los plazos establecidos y lo mejor es q conocen todas las maquinas. En especial las Wascomat👏👏👏👏👏👏"</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton7" name="cRadio">
-                        <label for="cBoton7"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>Cesar Sayago</h4>
-                                <p>Director / Tintorerias Miramar</p>
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/miramar.png" alt="cliente-lavadero">
-                            <img class="iconoDeCliente" src="./img/icono lavadero.png" alt="icono-lavadero">
-                            <blockquote>"Excelente servicio, gente muy responsable para trabajar."</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton8" name="cRadio">
-                        <label for="cBoton8"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>Rosario Ledesma</h4>
-                                <p>Director / Empresa</p>
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/rosario-ledesma-geriatrico.jpeg" alt="cliente-geriatrico">
-                            <img class="iconoDeCliente" src="./img/icono geriatrico.png" alt="icono-geriatrico">
-                            <blockquote>"Respondieron súper rápido. Son responsables y ordenados. Quedamos muy conformes con su trabajo 👏"</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton9" name="cRadio">
-                        <label for="cBoton9"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>Sebastián</h4>
-                                <p>Técnico Motores / Semaq</p>
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/semaq-tecnico.jpg" alt="colega-tecnico">
-                            <img class="iconoDeCliente" src="./img/clientes/iconos-tecnico.png" alt="icono-tecnico">
-                            <blockquote>"Yo estoy en el rubro hace 14 años con Maytag y Speed Queen y tengo que felicitar cuando veo un buen trabajo."</blockquote>
-                        </article>
-                    </li>
-                    <li>
-                        <input type="radio" id="cBoton10" name="cRadio">
-                        <label for="cBoton10"></label>
-                        <article class="testimonio__cliente">
-                            <div>
-                                <h4>Vilma Ponce</h4>
-                                <p>Director / Lavarapid</p>
-                            </div>
-                            <img class="imgDeCliente" src="./img/clientes/vilma-ponce-lavadero.jpg" alt="cliente-lavadero">
-                            <img class="iconoDeCliente" src="./img/icono lavadero.png" alt="icono-lavadero">
-                            <blockquote>"Atentos, responsables y prolijos. Exelente servicio y atención de parte de los chicos. Super recomendable !!"</blockquote>
-                        </article>
-                    </li>
-                </ul>
-            </section><!-- fin testimonios -->
-        <section class="nuestroEquipo">
-            <h2>Conocé el equipo detrás de este
-                proyecto, que gracias a vos sigue
-                creciendo.
-            </h2>
-            <div>
-                <button><a href="./html/sobre-nosotros.html">Nosotros</a></button>
-            </div>
-        </section><!-- fin conocenos -->
-
-            <footer class="footer">
-                <div class="margenesContenido footer_grid">
+            <h2>Contactate con nosotros</h2>    
+            <section class="contacto">
+                <div class="contacto__1">
+                    <p>Si deseas asesorarte en línea con un técnico o recibir mas información escríbenos y te atenderemos cualquier consulta a la mayor brevedad</p>
                     <div>
-                        <p>Arcoltec, ARGENTINA. Servicio técnico a domicilio para maquinas comerciales de lavado y secado. Atención a lavaderos , hoteles , laundries,<br> lavaderos autoservicio y particulares. <br>Servicio principal en Capital federal, atención a nivel nacional.</p>
-                        <p>Encontrá <span><a href="./html/servicios.html">aquí</a></span> las marcas que trabajamos.</p>
-                        <p>Probá los <span><a href="./html/productos.html">productos industria Argentina</a></span>, calidad, economía y ahorro , haz clic aqui para saber más.
-                        </p>
+                        <a href="https://wa.me/541163646692"><button>Whatsapp</button></a>
                     </div>
-                    <div class="footer__redes">
-                        <button><a href="./html/contacto.html">Click aquí para contactarnos</a></button>
-                        <div class="footer__redes--iconos">
-                        <h3>Redes sociales</h3>
-                            <a href="https://www.facebook.com/Arcoltec" Target=_blank><img src="./img/icono-facebook.png" alt="icono-facebook"></a>
-                            <a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank><img src="./img/icono-youtube.png" alt="icono-youtube"></a>
-                            <a href="https://www.instagram.com/arcoltec/" Target=_blank><img src="./img/icono-instagram.png" alt="icono-instagram"></a>
-                        </div>
-                    </div>
+                    
                 </div>
-            </footer><!-- fin footer -->
+                <div class="contacto__2">
+                    <p>Si tu consulta es urgente podes llamarnos a los siguientes números telefónicos: </p>
+                    <div>
+                        <a href="tel:+541163646692"><button>+541163646692</button></a>
+                        <a href="tel:+541125882434"><button>+541125882434</button></a>
+                    </div>
 
+                </div>
+            </section><!-- fin contacto -->
+            <section class="solucionesBrindadas">
+                <h2>Soluciones técnicas</h2>
+                <div class="solucionesBrindadas__servicios">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li>Reparación, mantenimiento e instalación de lavadoras y secadoras comerciales e industriales. </li>
+                        <li>Automatización y adaptación de programas universales</li>
+                    </ul>
+                </div>
+                <div class="solucionesBrindadas__productos">
+                
+                    <h3>Productos</h3>
+                    <ul>
+                        <li>Venta de productos para automatización de maquinas de lavado y secado</li>
+                    </ul>
+                </div>
+                <div class="solucionesBrindadas__asesoramiento">
+                    <h3>Asesoramiento</h3>
+                    <ul>
+                        <li>Contactate con nuestros expertos para asesorarte sobre los cuidados y mantenimiento de tus maquinas.</li>
+                        <li>Atención a técnicos</li>
+                    </ul>
+                </div>
+            </section><!-- fin servicios -->
+        </div><!--fin margen-->
+        <section class="marcasTrabajadas" >
+            <h2>Marcas que trabajamos</h2>
+            <img class="marcasTrabajadas__imgMedia" id="adc" src="./img/adc.png" alt="marca-lavadoras-y-secadoras-adc">
+            <img class="marcasTrabajadas__imgMedia" id="cissell" src="./img/cissel.png" alt="marca-lavadoras-y-secadoras-cissel">
+            <img class="marcasTrabajadas__imgCorta" id="dexter" src="./img/dexter.png" alt="marca-lavadoras-y-secadoras-dexter">
+            <img class="marcasTrabajadas__imgLarga" id="girbau" src="./img/girbau.png" alt="marca-lavadoras-y-secadoras-girbau">
+            <img class="marcasTrabajadas__imgCorta" id="ipso" src="./img/ipso.png" alt="marca-lavadoras-y-secadoras-ipso">
+            <img class="marcasTrabajadas__imgLarga" id="marva" src="./img/marva.png" alt="marca-lavadoras-y-secadoras-marva">
+            <img class="marcasTrabajadas__imgMedia" id="maytag" src="./img/maytag.png" alt="marca-lavadoras-y-secadoras-maytag">
+            <img class="marcasTrabajadas__imgLarga" id="primus" src="./img/primus.png" alt="marca-lavadoras-y-secadoras-primus">
+            <img class="marcasTrabajadas__imgMedia" id="refe" src="./img/refe.png" alt="marca-lavadoras-y-secadoras-refe">
+            <img class="marcasTrabajadas__imgLarga" id="speedQueen" src="./img/speed-queen.png" alt="marca-lavadoras-y-secadoras-speed-queen">
+            <img class="marcasTrabajadas__imgMedia" id="uniMac" src="./img/unimac.png" alt="marca-lavadoras-y-secadoras-unimac">
+            <img class="marcasTrabajadas__imgLarga" id="wascomat" src="./img/wascomat.png" alt="marca-lavadoras-y-secadoras-wascomat">
+        </section><!-- fin marcas que trabajamos -->
+    </main>
+    <div class="margenesContenido">
+        <section class="productos">
+            <h2>Productos para automatización</h2>
+            <div>
+            <button><a href="./html/productos.html">Más información</a></button>
+            </div>
+        </section><!-- fin productos -->
+    </div>
+    <section class="atencion">
+        <h2>Atención a:</h2>
         
+        <div class="atencion__lavadero">
+            <img src="./img/icono lavadero.png" alt="icono-lavaderos">
+            <div>
+                <h3>Lavaderos</h3>
+            </div>
+        </div>
+        <div class="atencion__hotel">
+            <img src="./img/icono hotel.png" alt="icono-hotel">
+            <h3>Hoteles</h3>
+        </div>
+        <div class="atencion__tintoreria">
+            <img src="./img/icono tintoreria.png" alt="icono-tintoreria">
+            <h3>Tintorerias</h3>
+        </div>
+        <div class="atencion__geriatrico">
+            <img src="./img/icono geriatrico.png" alt="icono-geriatrico">
+            <h3>Geriátricos</h3>
+        </div>
+        <div class="atencion__particular">
+            <img src="./img/icono particular.png" alt="icono-particular">
+            <h3>Particulares</h3>
+        </div>
+    </section><!-- fin a quien atendemos -->
+    <section class="testimonios">
+        <h2>Testimonios</h2>
+        <div class="container-sm" style="max-width: 600px;" >
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="border-radius: .7rem;" src="./img/clientes/guillermo-baque-hotel.jpg" class="d-block w-100 h-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.697); border-radius: 1rem;">
+                      <h5>Guillermo Baque</h5>
+                      <h6>Director / General Belgrano</h6>
+                      <p style="color: rgb(240, 240, 240) ;">"Esto era chatarra. Estos genios dejaron en horas un hermoso Lavarropas industrial que no había quien lo arregle. Con profesionalismo. Juventud y ganas de trabajar demostraron cómo hay jóvenes que tiene cultura del trabajo. Gracias genios!! Ahhh otra cosa no menos importante son muy honestos."</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img style="border-radius: .7rem;" src="./img/clientes/adrian-zorrilla-lavadero.jpg" class="d-block w-100 h-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.697); border-radius: 1rem;">
+                      <h5>Adrian Zorrilla</h5>
+                      <h6>Director / Lavadero San Cayetano</h6>
+                      <p style="color: rgb(240, 240, 240) ;">"Atendieron mi reclamo con rapidez y muy rápido..gente seria y responsable para recomendar se ganaron un cliente"</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img style="border-radius: .7rem;" src="./img/clientes/ana-chavez-lavadero.jpeg" class="d-block w-100 h-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.697); border-radius: 1rem;">
+                      <h5>Ana Chavez</h5>
+                      <h6>Director / El lavadero de paquita</h6>
+                      <p style="color: rgb(240, 240, 240) ;">"Quiero recomendar al 100% el trabajo de Diana. Siempre realiza sus trabajos con mucha responsabilidad. Nunca he tenido ningún inconveniente. Gente muy cálida y profesional!
+                        Saludos!
+                        Ana"</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+    </section><!-- fin testimonios -->
+    <section class="nuestroEquipo">
+        <h2>Conocé el equipo detrás de este
+            proyecto, que gracias a vos sigue
+            creciendo.
+        </h2>
+        <div>
+            <button><a href="./html/sobre-nosotros.html">Nosotros</a></button>
+        </div>
+    </section><!-- fin conocenos -->
+
+    <footer class="footer">
+        <div class="margenesContenido footer_grid">
+            <div>
+                <p>Arcoltec, ARGENTINA. Servicio técnico a domicilio para maquinas comerciales de lavado y secado. Atención a lavaderos , hoteles , laundries,<br> lavaderos autoservicio y particulares. <br>Servicio principal en Capital federal, atención a nivel nacional.</p>
+                <p>Encontrá <span><a href="./html/servicios.html">aquí</a></span> las marcas que trabajamos.</p>
+                <p>Probá los <span><a href="./html/productos.html">productos industria Argentina</a></span>, calidad, economía y ahorro , haz clic aqui para saber más.
+                </p>
+            </div>
+            <div class="footer__redes">
+                <button><a href="./html/contacto.html">Click aquí para contactarnos</a></button>
+                <div class="footer__redes--iconos">
+                <h3>Redes sociales</h3>
+                    <a href="https://www.facebook.com/Arcoltec" Target=_blank><img src="./img/icono-facebook.png" alt="icono-facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank><img src="./img/icono-youtube.png" alt="icono-youtube"></a>
+                    <a href="https://www.instagram.com/arcoltec/" Target=_blank><img src="./img/icono-instagram.png" alt="icono-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer><!-- fin footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
 
