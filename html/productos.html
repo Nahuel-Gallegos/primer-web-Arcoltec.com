@@ -6,42 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos, Arcoltec. Calidad industrial, calidad humana</title>
     <link rel="stylesheet" href="../css/style.css"><!--hoja css-->
+    <link rel="stylesheet" href="../css/restonsive.css"><!--hoja css responsive-->
     <link rel="stylesheet" href="../css/normalizer.css"><!--normalizer-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,400;0,8..144,700;1,8..144,400&display=swap" rel="stylesheet">  
     <!-- Titulos font-family: 'Roboto Serif', serif; //////// contenido font-family: 'Roboto Flex', sans-serif;-->
+    <script src="https://kit.fontawesome.com/b6ce468d03.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!--bootstrap css y js-->
 </head>
 <body>
-    <header>
-        <div class="navegador">
-            <div class="navegador__LogoPequenio">
-                <a href="../index.html"><img src="../img/logoPequeño.png" alt="logo-pequeño" href="../index.html"></a>
-                <p>Calidad industrial<span> Calidad humana<span></p>
+        <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../img/logoPequeño.png" alt="logo-pequeño" href="index.html"></a>
+              <div class="navbar-containerLeyendaLogo me-auto">
+                <p>Calidad industrial</p>
+                <p>Calidad humana</p>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
             </div>
-            <nav class="navegador__navegador">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="bannerHeader">
+          </nav>
+       <div class="bannerHeader">
             <img class="bannerHeader__fondo" src="../img/bgHeader1.webp" alt="banner-principal">
             <div class="bannerHeader__logo--tituloOtros" id="logoProductos">
                 <h1>Programas para automatización de <br>lavadoras y secadoras</h1>
-                <p>Argentina-Colombia</p>
             </div>
         </div>
-    </header><!-- fin encabezado -->
+    </header>
         <main><!-- inicio contenido principal -->
             <div class="margenesContenido">
                 <section class="asesoramiento">
                     <div class="asesoramiento__background">
-                        <h2>Asesórate con un técnico en linea </h2>
+                        <h2>Asesórate con un técnico en linea</h2>
                         <div class="asesoramiento__background--boton">
                             <img src="../img/icono-wsp.png" alt="icono-whatsapp">
                             <a href="https://wa.me/541163646692" target="_blank">
@@ -74,10 +92,12 @@
                 <h2>Selección de productos</h2>
                 <div class="seleccionDeProductos__secadora backgroundGris">
                     <div class="seleccionDeProductos__secadora--contenido"><!-- inicio producto para secadoras -->
-                        <img src="../img/productos/secadoras-aptas-programa.png" alt="secadoras-industriales">
+                        <h3 class="seleccionDeProductos__secadora--titulo">PROGRAMAS para secadoras Industriales </h3>
+                        <div class="seleccionDeProductos__secadora--img">
+                            <img src="../img/productos/secadoras-aptas-programa.png" alt="secadoras-industriales">
+                        </div>
                         <div class="seleccionDeProductos__secadora--contenidoInterno"> 
-                            <h3>PROGRAMAS para secadoras Industriales </h3>
-                            <p>Controlador para secadoras monofásicas, trifásicas , a gas o eléctricas:</p>
+                            <p>Controlador para secadoras monofásicas, trifásicas, a gas o eléctricas:</p>
                             <ul>
                                 <li>Speed Queen</li>
                                 <li>Cissell</li>
@@ -93,11 +113,13 @@
                             <p>Este programa universar tiene la caracteristica de poder adaptarse a cualquier secadora del mercado gracias a su sencilla y completa configuracion.</p>
                         </div>
                         <div class="seleccionProductos__programaSecadora--producto">
-                            <img src="../img/productos/placa-secadora.jpg" alt="control-secadora">
-                            <div>
-                                <h4>Control universal para secadoras de todas las marcas</h4>
+                            <h4>Control universal para secadoras de todas las marcas</h4>
+                            <div class="seleccionProductos__programaSecadora--img">
+                                <img src="../img/productos/placa-secadora.jpg" alt="control-secadora">
+                            </div>
+                            <p>Características</p>
                                 <ul>
-                                    <p>Características</p>
+                                   
                                     <li>Adaptable a motores monofásico y trifásico</li>
                                     <li>Sensor de temperatura</li>
                                     <li>Tres niveles de temperatura</li>
@@ -106,7 +128,7 @@
                                     <li>Visualización de tiempo y temperatura programada</li>
                                     <li>Señal de finalización de ciclo </li>
                                 </ul>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="seleccionDeProductos__secadora--trabajosRealizados" ><!--carrusel-->
@@ -126,9 +148,11 @@
                 <div class="margenesContenido">
                     <div class="seleccionProductos__lavadoras"><!-- inicio productos lavadoras -->
                         <div class="seleccionProductos__lavadoras--contenido">
-                            <img src="../img/productos/lavadoras-aptas-programa.png" alt="lavadoras-industriales">
-                            <div>
-                                <h3>PROGRAMAS para lavadoras Industriales</h3>
+                            <h3>PROGRAMAS para lavadoras Industriales</h3>
+                            <div class="seleccionProductos__lavadoras--img">
+                                <img src="../img/productos/lavadoras-aptas-programa.png" alt="lavadoras-industriales">
+                            </div>
+                            <div class="seleccionProductos__lavadoras--descripcion">
                                 <p>Control para Lavadoras de dos velocidades, solo lavado o solo ciclado o reversible:</p>
                                 <ul>
                                     <li>Speed Queen</li>
@@ -217,43 +241,41 @@
             <h2>Asesoria Online</h2>
             <p>Quieres conocer mas sobre nuestros productos, o quieres consultar algo en especial, dejanos tus datos y en breve nos contactaremos contigo para asesorarte en el producto que necesitas.</p>
             <form class="formularioContacto__formulario" action="enviar.php">
-                <div>
+                
                     <label class="formularioContacto__formulario--nombre" for="nombre">Nombre:</label>
                     <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-                </div>
-                <div class="formularioContacto__formulario--email">
+                
+                
                     <label for="email">Email:</label>
                     <input type="email" id="email" required placeholder="Ingrese su email">
-                </div>
-                <div class="formularioContacto__formulario--telefono">
+                
+                
                     <label for="number">Numero telefónico:</label>
                     <input type="number" id="tel" placeholder="Ingrese su numero telefónico">
-                </div>
-                <div class="formularioContacto__formulario--adjunto">
+                
+                
                     <label  for="adjunto">Ingrese foto o video de la máquina: </label>
                     <input type="file" id="adjunto">
-                </div>
-                <div class="formularioContacto__formulario--maquina">
+                
+                
                     <label for="maquina">El producto es para:</label>
                     <span class="maquina1"><input type="radio" name="maquina" value="00"> Lavadora </span>
                     <span class="maquina2"><input type="radio" name="maquina" value="01"> Secadora</span>
-                </div>
-                <div class="formularioContacto__formulario--marca">
+                
+                
                     <label for="marca">Marca: </label>
                     <input type="text" placeholder="Ingrese la marca de su equipo">
-                </div>
-                <div class="formularioContacto__formulario--pais">
+                
                     <label for="pais">Pais:</label>
                     <select name="pais" id="pais">
                         <option value="arg">Argentina</option>
                         <option value="col">Colombia</option>
                         <option value="otro">Otro</option>
                     </select>
-                </div>
-                <div class="formularioContacto__formulario--mensaje">
+                
                     <label for="mensaje">Mensaje:</label>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Comentá, en que podemos ayudarte?"></textarea>
-                </div>
+               
                     <input class="formularioContacto__formulario--boton" type="submit" value="Hacé tu pedido">
                     <input class="formularioContacto__formulario--boton" type="reset" value="Borrar todo">
             </form>
@@ -261,20 +283,29 @@
     </div>
        
     <footer class="footer">
-        <p>Arcoltec, ARGENTINA. Servicio técnico a domicilio para maquinas comerciales de lavado y secado. Atención a lavaderos , hoteles , laundries,<br> lavaderos autoservicio y particulares. <br>Servicio principal en Capital federal, atención a nivel nacional.</p>
-        <p>Encontrá <span><a href="./servicios.html">aquí</a></span> las marcas que trabajamos.</p>
-        <p>Probá los <span><a href="productos.html">productos industria Argentina</a></span>, calidad, economía y ahorro , haz clic aqui para saber más.
-        </p>
-        <div class="footer__redes">
-            <button><a href="./contacto.html">Click aquí para contactarnos</a></button>
-            <div class="footer__redes--iconos">
-            <h3>Redes sociales</h3>
-                <a href="https://www.facebook.com/Arcoltec" Target=_blank><img src="../img/icono-facebook.png" alt="icono-facebook"></a>
-                <a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank><img src="../img/icono-youtube.png" alt="icono-youtube"></a>
-                <a href="https://www.instagram.com/arcoltec/" Target=_blank><img src="../img/icono-instagram.png" alt="icono-instagram"></a>
+        <div class="margenesContenido footer_grid">
+            <div>
+                <p>Arcoltec, ARGENTINA. Servicio técnico a domicilio para maquinas comerciales de lavado y secado. Atención a lavaderos , hoteles , laundries,<br> lavaderos autoservicio y particulares. <br>Servicio principal en Capital federal, atención a nivel nacional.</p>
+                <p>Encontrá <span><a href="./servicios.html">aquí</a></span> las marcas que trabajamos.</p>
+                <p>Probá los <span><a href="productos.html">productos industria Argentina</a></span>, calidad, economía y ahorro , haz clic aqui para saber más.
+                </p>
+            </div>
+            <div class="footer__redes">
+                <button><a href="./contacto.html">Click aquí para contactarnos</a></button>
+                <div class="footer__redes--iconos">
+                <h3>Redes sociales</h3>
+                    <a href="https://www.facebook.com/Arcoltec" Target=_blank><img src="../img/icono-facebook.png" alt="icono-facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCaItas0B3xWTFh4InLyDpfQ/videos" Target=_blank><img src="../img/icono-youtube.png" alt="icono-youtube"></a>
+                    <a href="https://www.instagram.com/arcoltec/" Target=_blank><img src="../img/icono-instagram.png" alt="icono-instagram"></a>
+                </div>
             </div>
         </div>
-    </footer><!-- fin footer -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
+<!--
+
+-->

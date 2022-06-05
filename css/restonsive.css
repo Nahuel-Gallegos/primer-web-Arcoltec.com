@@ -1,6 +1,23 @@
-/*///////////MOBILE MAX-WIDTH 600px///////////////*/
-@media (max-width: 600px){
+/*///////////MOBILE MAX-WIDTH 680px///////////////*/
+@media (max-width: 680px){
 
+    .bannerHeader__logo--tituloOtros h1{
+        font-size: 2em;
+    }
+
+/*//////////PAGINA PRODUCTOS////////////*/
+.seleccionProductos__lavadoras--ofertaLavadora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.seleccionProductos__lavadoras--ofertaLavadoraDescripcion{
+    grid-column: 1/3;
+    text-align: center;
+}
+.seleccionProductos__lavadoras--ofertaLavadoraProducto{
+    margin: .7em;
+}
     /*///////////////////FOOTER//////////////////*/
 
 .footer{
@@ -206,13 +223,6 @@
 
 
 
-
-
-/*/////////////TABLET MIN-WIDTH 601px MAX-WIDTH 1024px/////////////////*/
-    @media (min-width: 600px) and (max-width: 1024px){
-
-}
-
 /*////////////////menu desplegable compartido entre tablet y mobile/////////////////*/
 @media (max-width: 1024px){
     .margenesContenido{
@@ -222,6 +232,38 @@
         padding-left: 2.5%;
         padding-right: 2.5%;
     }
+/*////////////PAGINA PRODUCTOS///////////////*/
+
+.seleccionDeProductos__secadora--contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seleccionProductos__programaSecadora--producto ul{
+display: grid;
+grid-template-columns: 60% 40%;
+}
+
+.seleccionProductos__programaSecadora--producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.seleccionProductos__lavadoras--contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seleccionProductos__lavadoras--contenido ul{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.seleccionProductos__lavadoras--contenido ul li{
+    padding-right: 2em;
+}
 
 /*menu desplegable*/
 

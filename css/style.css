@@ -772,22 +772,24 @@ header{
 .asesoramiento h2{
     color: rgb(255, 255, 255);
     padding: 15px;
-    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     text-align: center;
 }
 .asesoramiento__background{
-    margin-left: 200px;
-    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     border-radius: 30px;
     background-image: url(../img/mujer-hablando-por-telefono.webp);
     background-repeat: no-repeat;
     background-size:cover;
     height:200px ;
+    min-width: 300px;
+    max-width: 800px;
 }
 .asesoramiento__background--boton{
-    position: relative;
-    left: 270px;
-    top: 30px;
+  
+    margin: 2em auto;
 }
 
 .asesoramiento__background--boton button{
@@ -807,7 +809,7 @@ header{
 }
 .asesoramiento__background--boton img{
     position:relative;
-    top: 10px;
+    top: -3px;
     left: 55px;
     z-index: 1;
     width: 30px;
@@ -824,6 +826,9 @@ header{
 }
 .seleccionDeOfertas__encabezado{
     grid-column: 1/3;
+}
+.seleccionDeOfertas div ul{
+    padding-left: 2em;
 }
 .seleccionDeOfertas h2, .seleccionDeProductos h2{
     text-align: center;
@@ -853,10 +858,12 @@ header{
     font-size: 21px;
     width: 200px;
 }
-
+.seleccionDeOfertas__descuento{
+    max-width: 10em;
+}
 .seleccionDeOfertas__descuento img{
     margin-top: 4em;
-    width: 10em;
+    width: 100%;
     height: auto;
 }
 .seleccionDeOfertas__descuento p{
@@ -876,16 +883,22 @@ header{
 .seleccionDeProductos__secadora{
     margin-bottom: 80px;
 }
-.seleccionDeProductos__secadora img{
-    width: 400px;
-    height: auto;
-}
-
 .seleccionDeProductos__secadora--contenido{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     margin-top: 20px;
     color:rgb(98, 98, 98);
+}
+.seleccionDeProductos__secadora--img{
+    min-width: none;
+    max-width: 400px;
+    height: auto;
+    grid-row: 1/3;
+}
+.seleccionDeProductos__secadora--img img{
+    width: 100%;
+    height: auto;
 }
 .seleccionDeProductos__secadora--contenido h3{
     font-size: 22px;
@@ -905,34 +918,52 @@ header{
 .seleccionProductos__programaSecadora--producto{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 20%;
-    margin-right: 20%;
+    grid-template-rows: 25% 10%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 320px;
     background-color: rgba(14, 5, 49, 0.07);
     text-align: center;
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 1px 10px rgb(0, 0, 0);
 }
-.seleccionProductos__programaSecadora--producto img{
+.seleccionProductos__programaSecadora--producto h4{
+    grid-column: 2/3;
+    margin: 10px 0;
+}
+.seleccionProductos__programaSecadora--img{
+    grid-row: 1/3;
     grid-column: 1/2;
-    width: 25em;
+}
+.seleccionProductos__programaSecadora--img img{
+    width: 100%;
     height: auto;
     margin-left: 0;
     margin-right: 0;
     border-radius: 5px 5px 0 0;
 }
-.seleccionProductos__programaSecadora--producto div{
+.seleccionProductos__programaSecadora--lista{
     grid-column: 2/3;
     padding: 10px;
 }
-.seleccionProductos__programaSecadora--producto p{
-    font-weight: 600;
-}
 .seleccionProductos__programaSecadora--producto p, .seleccionProductos__programaSecadora--producto ul{
     text-align: start;
+    grid-column: 2/3;
+}
+.seleccionProductos__programaSecadora--producto p{
+    font-weight: 600;
+    margin: 10px 0;
+}
+.seleccionProductos__programaSecadora--producto ul{
+    padding-left: 2.8em;
+}
+.seleccionProductos__programaSecadora--producto ul li{
+    padding-right: 2.5em;
 }
 /*//////////////carrusel //////////////*/
 .seleccionDeProductos__secadora--trabajosRealizados {
-	width: 80%;
+	width: 100%;
+
 	margin: auto;
 	overflow: hidden;
 }
@@ -951,6 +982,7 @@ header{
 
 .seleccionDeProductos__secadora--trabajosRealizados img {
 	width: 100%;
+    height: auto;
 }
 
 @keyframes cambio {
@@ -973,16 +1005,21 @@ header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-
-.seleccionProductos__lavadoras--contenido img{
+.seleccionProductos__lavadoras--img{
     grid-column: 1/2;
-    width: 600px;
+    grid-row: 1/3;
+    max-width: 600px;
+}
+.seleccionProductos__lavadoras--img img{
+    width: 100%;
     height: auto;
 }
-.seleccionProductos__lavadoras--contenido div{
+.seleccionProductos__lavadoras--descripcion,.seleccionProductos__lavadoras--contenido h3{
     grid-column: 2/3;
 }
-
+.seleccionProductos__lavadoras--contenido h3{
+    text-align: center;
+}
 /*productos para lavadora*/
 .seleccionProductos__lavadoras--ofertaLavadora{
     display: grid;
